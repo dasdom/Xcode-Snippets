@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  func test_triggerViewDisappearing() {
+    // given
+    
+    // when
+    sut.beginAppearanceTransition(false, animated: false)
+    sut.endAppearanceTransition()
+    
+    // then
+    
+  }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6582AB97-52F0-4595-AEA2-62EFEDBD978A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test: Trigger View Disappearance</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

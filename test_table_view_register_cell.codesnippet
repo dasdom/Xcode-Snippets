@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  func test_loadingView_registersCell() {
+    // when
+    sut.loadViewIfNeeded()
+    
+    // then
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: &lt;#reuse identifier#&gt;, for: IndexPath(row: &lt;#row#&gt;, section: &lt;#section#&gt;))
+    XCTAssertNotNil(cell)
+    XCTAssertTrue(cell is &lt;#cell class#&gt;)
+  }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>13D4DA4F-0B71-4734-83C0-3FE4B40BCB31</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test UITableView: Register Cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
