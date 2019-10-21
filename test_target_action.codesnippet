@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>test_target_action</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func test_&lt;#action#&gt;_&lt;#desired result#&gt;() {
+  // given
+  sut.loadViewIfNeeded()
+  
+  // when
+  sut.&lt;#button#&gt;.sendActions(for: .touchUpInside)
+  
+  // then
+  XCTAssertEqual(&lt;#expected result#&gt;, &lt;#actual result#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C8773BFE-5503-4549-B947-778CB0B51DBD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Test that a control executes the expeced action.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test Target-Action</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

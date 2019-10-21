@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var sut: &lt;#sut class#&gt;!
+  
+  override func setUp() {
+    sut = &lt;#sut class#&gt;()
+  }
+  
+  override func tearDown() {
+    sut = nil
+  }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D7FF7F0-E4D9-41ED-AC0D-F04977DEC8D8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Property, setUp and tearDown for the sut</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test: Setup System Unter Test</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
