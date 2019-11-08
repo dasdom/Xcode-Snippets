@@ -9,22 +9,24 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  func test_labelIsSubview() {
+	<string>  func test_numberOfRows() {
     // given
+    sut.&lt;#data property#&gt; = &lt;#test data#&gt; 
     
     // when
+    let numberOfRows = sut.tableView.numberOfRows(inSection: &lt;#section#&gt;)
     
     // then
-    XCTAssertTrue(sut.label.isDescendant(of: sut))
+    XCTAssertEqual(&lt;#expected value#&gt;, numberOfRows)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BFC2BC01-269A-4B1C-890E-1E7A6185AFB1</string>
+	<string>42CB8941-442F-4514-AEEB-0445F74B2B6E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test Existence Of Subviews</string>
+	<string>Test UITableView: Number Of Rows</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

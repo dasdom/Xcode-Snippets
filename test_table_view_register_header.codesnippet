@@ -9,23 +9,22 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func test_loadingView_registersCell() {
-    // Act
+	<string>  func test_loadingView_registersHeader() {
+    // when
     sut.loadViewIfNeeded()
     
-    // Assert
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: "&lt;#cell identifier#&gt;", for: IndexPath(row: &lt;#row#&gt;, section: &lt;#section#&gt;))
-    XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is &lt;#cell class#&gt;)
+    // then
+    let header = sut.tableView.dequeueReusableHeaderFooterView(withIdentifier: &lt;#identifier#&gt;)
+    XCTAssertNotNil(header)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>55F133CD-299D-4B7D-AEF6-358D92CFF639</string>
+	<string>CDDF701C-F7E5-4BA0-8E36-1C6708870E9B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Test whether a cell for a given cell identifer is registered.</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test UITableView: Register Cell</string>
+	<string>Test UITableView: Register Header</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

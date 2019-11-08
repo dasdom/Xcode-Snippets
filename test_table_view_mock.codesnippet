@@ -11,13 +11,31 @@
 	<key>IDECodeSnippetContents</key>
 	<string>class TableViewMock : UITableView {
   
-  var dequeueReusableCellCalls = 0
-  
+  var dequeueReusableCellCalls: [String:Int] = [:]
+  var dequeueReusableHeaderCalls: [String:Int] = [:]
+  var indexPathsOfAddedRows: [IndexPath] = []
+
   override func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -&gt; UITableViewCell {
     
-    dequeueReusableCellCalls += 1
+    var numberOfCalls = dequeueReusableCellCalls[identifier] ?? 0
+    numberOfCalls += 1
+    dequeueReusableCellCalls[identifier] = numberOfCalls
     
     return &lt;#cell class#&gt;()
+  }
+
+  override func dequeueReusableHeaderFooterView(withIdentifier identifier: String) -&gt; UITableViewHeaderFooterView? {
+    
+    var numberOfCalls = dequeueReusableHeaderCalls[identifier] ?? 0
+    numberOfCalls += 1
+    dequeueReusableHeaderCalls[identifier] = numberOfCalls
+    
+    return &lt;#header class#&gt;()
+  }
+  
+  override func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
+    
+    indexPathsOfAddedRows = indexPaths
   }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

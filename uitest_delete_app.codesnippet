@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension XCUIApplication {
+  func delete() {
+    
+    delete(app: self.label)
+  }
+  
+  func delete(app: String) {
+    
+    self.terminate()
+    
+    let springboard = XCUIApplication(
+      bundleIdentifier: "com.apple.springboard")
+    
+    let appIcon = springboard.icons[app]
+    if appIcon.exists {
+      appIcon.press(forDuration: 1.3)
+      springboard.buttons["Delete App"].tap()
+      Thread.sleep(forTimeInterval: 0.8)
+      springboard.alerts.buttons["Delete"].tap()
+      Thread.sleep(forTimeInterval: 0.8)
+      XCUIDevice.shared.press(.home)
+    }
+  }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E328B64-C4A2-44B1-A82F-E4BD63AB5322</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITest: Delete App</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -18,7 +18,7 @@
     _ = sut.tableView(mockTableView, cellForRowAt: indexPath)
     
     // then
-    XCTAssertEqual(mockTableView.dequeueReusableCellCalls, 1)
+    XCTAssertEqual(mockTableView.dequeueReusableCellCalls[&lt;#identifier#&gt;], 1)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F7C0B394-243E-46F4-B30F-5EA67A654165</string>

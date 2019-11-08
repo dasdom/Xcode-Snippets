@@ -9,22 +9,26 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  func test_labelIsSubview() {
+	<string>  func test_&lt;#action#&gt;_insertsRows() {
     // given
-    
+    let mockTableView = TableViewMock()
+    sut.tableView = mockTableView
+
     // when
+    sut.&lt;#action#&gt;
     
     // then
-    XCTAssertTrue(sut.label.isDescendant(of: sut))
+    let expectedIndexPaths = [IndexPath(row: &lt;#row#&gt;, section: &lt;#section#&gt;)]
+    XCTAssertEqual(mockTableView.indexPathsOfAddedRows, expectedIndexPaths)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BFC2BC01-269A-4B1C-890E-1E7A6185AFB1</string>
+	<string>FF9AE6FE-A044-4BB6-83A4-42B581222484</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test Existence Of Subviews</string>
+	<string>Test UITableView: Insert Rows</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

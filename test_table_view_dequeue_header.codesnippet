@@ -9,22 +9,24 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  func test_labelIsSubview() {
+	<string>  func test_cellForRow_dequeuesHeader() {
     // given
+    let mockTableView = TableViewMock()
     
     // when
+    _ = sut.tableView(mockTableView, viewForHeaderInSection: &lt;#section#&gt;)
     
     // then
-    XCTAssertTrue(sut.label.isDescendant(of: sut))
+    XCTAssertEqual(mockTableView.dequeueReusableHeaderCalls[&lt;#identifier#&gt;], 1)
   }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BFC2BC01-269A-4B1C-890E-1E7A6185AFB1</string>
+	<string>6B42ED35-499F-48B4-A04E-700CE23A6909</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test Existence Of Subviews</string>
+	<string>Test UITableView: Dequeue Header</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
