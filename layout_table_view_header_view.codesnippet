@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>layoutHeaderView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// Original source: https://gist.github.com/marcoarment/1105553afba6b4900c10
+func layoutHeaderView() {
+    
+    guard let headerView = tableView.tableHeaderView else { return }
+    headerView.translatesAutoresizingMaskIntoConstraints = false
+    
+    let headerWidth = headerView.bounds.size.width;
+    let temporaryWidthConstraint = headerView.widthAnchor.constraint(equalToConstant: headerWidth)
+    
+    temporaryWidthConstraint.isActive = true
+    
+    headerView.setNeedsLayout()
+    headerView.layoutIfNeeded()
+    
+    let headerSize = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+    let height = headerSize.height
+    var frame = headerView.frame
+    
+    frame.size.height = height
+    headerView.frame = frame
+    
+    tableView.tableHeaderView = headerView
+    
+    temporaryWidthConstraint.isActive = false
+    headerView.translatesAutoresizingMaskIntoConstraints = true
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>93937BA6-5471-4ED4-A3D3-3746DB2E7594</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Layout Table View Header View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
